@@ -1,4 +1,4 @@
-import { CautionIcon, LightningChargeIcon, SunIcon } from "../constants";
+import { CautionIcon, LightningChargeIcon, SunIcon } from "../../constants";
 import Footer from "../Footer";
 
 const RightSection = () => {

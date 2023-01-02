@@ -5,7 +5,7 @@ import {
   LogOutIcon,
   PlusIcon,
   SunIcon,
-} from "../constants";
+} from "../../constants";
 
 const LeftSection = () => {
   return (

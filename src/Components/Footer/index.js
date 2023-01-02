@@ -1,5 +1,5 @@
 import React from "react";
-import { PlaneIcon, UserIcon } from "../constants";
+import { PlaneIcon, UserIcon } from "../../constants";
 
 const Footer = () => {
   return (

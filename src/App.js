@@ -1,5 +1,5 @@
 import { LeftSection, RightSection } from "./Components";
-import { MenuIcon, PlusIcon } from "./Components/constants";
+import { MenuIcon, PlusIcon } from "./constants";
 
 export default function App() {
   return (
