@@ -23,8 +23,7 @@ export default function App() {
         </button>
       </div>
       {/* Left Section */}
-      {show && <LeftSection {...{ show }} />}
-      <LeftSection />
+      <LeftSection {...{ show }} />
 
       {/* Right Section */}
       <RightSection />
