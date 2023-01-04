@@ -7,9 +7,13 @@ import {
   SunIcon,
 } from "../../constants";
 
-const LeftSection = () => {
+const LeftSection = ({ show = false }) => {
   return (
-    <div className="hidden bg-black md:fixed md:inset-y-0 md:flex md:w-[260px] md:flex-col">
+    <div
+      className={`${show && " flex flex-col"} ${
+        !show && "hidden"
+      } bg-black md:fixed md:inset-y-0 md:flex md:w-[260px] md:flex-col`}
+    >
       <div className="flex h-full min-h-0 flex-col ">
         <div className="scrollbar-trigger flex h-full w-full flex-1 items-start border-white/20">
           <nav className="flex h-full flex-1 flex-col space-y-1 p-2">

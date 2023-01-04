@@ -1,13 +1,16 @@
+import React, { useState } from "react";
 import { LeftSection, RightSection } from "./Components";
 import { MenuIcon, PlusIcon } from "./constants";
 
 export default function App() {
+  const [show, setShow] = useState(false);
   return (
     <div>
       <div className="sticky top-0 z-10 flex items-center border-b border-white/20 bg-gray-800 pl-1 pt-1 text-gray-200 sm:pl-3 md:hidden">
         <button
           type="button"
-          className="-ml-0.5 -mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-md hover:text-gray-900 focus:outline-none focus:ring-1 focus:ring-white dark:hover:text-white"
+          className="-ml-0.5 -mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-md focus:outline-none focus:ring-1 focus:ring-white dark:hover:text-white text-gray-100"
+          onClick={() => setShow(!show)}
         >
           <span className="sr-only">Open sidebar</span>
           <MenuIcon />
@@ -17,9 +20,12 @@ export default function App() {
           <PlusIcon className="h-6 w-6" />
         </button>
       </div>
-      <RightSection />
-      {/*  */}
+      {/* Left Section */}
+      {show && <LeftSection {...{ show }} />}
       <LeftSection />
+
+      {/* Right Section */}
+      <RightSection />
     </div>
   );
 }
