@@ -3,6 +3,7 @@ import { LeftSection, RightSection } from "./Components";
 import { MenuIcon, PlusIcon } from "./constants";
 
 export default function App() {
+  // Toggle
   const [show, setShow] = useState(false);
   return (
     <div>
@@ -22,6 +23,7 @@ export default function App() {
           <PlusIcon className="h-6 w-6" />
         </button>
       </div>
+
       {/* Left Section */}
       <LeftSection {...{ show }} />
 
