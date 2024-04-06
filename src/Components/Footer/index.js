@@ -18,6 +18,7 @@ const Footer = () => {
               data-id="root"
               rows="1"
               className="m-0 w-full resize-none border-0 bg-transparent p-0 pr-7 focus:ring-0 focus-visible:ring-0 dark:bg-transparent outline-none overflow-y-hidden h-[23px]"
+              placeholder="Message ChatGPT..."
             ></textarea>
             <button className="absolute p-1 rounded-md text-gray-400 bottom-1.5 right-1 md:bottom-2.5 md:right-2 hover:bg-black">
               <PlaneIcon />
