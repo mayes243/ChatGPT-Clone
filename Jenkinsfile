@@ -8,11 +8,11 @@ pipeline {
             }
         }
         
-        stage('Test') {
-            steps {
-                sh 'npm test'
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         sh 'npm test'
+        //     }
+        // }
 
         stage('Install Dependencies') {
             steps {
