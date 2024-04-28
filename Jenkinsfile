@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    environment {
+        NVM_DIR = "$HOME/.nvm"
+        PATH = "/var/jenkins_home/.nvm:$PATH"
+    }
+
     stages {
         stage("checkout") {
             steps {
@@ -12,7 +17,6 @@ pipeline {
             steps {
                 // Install Node.js using nvm
                 sh 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash'
-                sh 'source ~/.bashrc'
                 sh 'nvm install node'
             }
         }
