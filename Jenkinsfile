@@ -1,7 +1,7 @@
 pipeline {
     agent {
-        docker {
-            image 'node:latest'
+        node {
+            label 'nodejs'
         }
     }
     
