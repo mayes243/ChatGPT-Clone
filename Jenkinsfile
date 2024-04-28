@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/mayes243/ChatGPT-Clone.git'
+                git 'git@github.com:mayes243/ChatGPT-Clone.git'
             }
         }
         
