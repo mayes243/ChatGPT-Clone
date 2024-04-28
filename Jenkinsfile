@@ -1,10 +1,10 @@
 pipeline {
-    agent any
-    
-    tools {
-        nodejs 'NodeJS'
+    agent {
+        docker {
+            image 'node:latest'
+        }
     }
-
+    
     stages {
         stage('Checkout') {
             steps {
@@ -12,9 +12,8 @@ pipeline {
             }
         }
         
-         stage('Test') {
+        stage('Test') {
             steps {
-                sh 'apt install npm'
                 sh 'npm test'
             }
         }
