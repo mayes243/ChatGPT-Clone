@@ -8,11 +8,12 @@ pipeline {
             }
         }
         
-        // stage('Test') {
-        //     steps {
-        //         sh 'npm test'
-        //     }
-        // }
+        stage('Test') {
+            steps {
+                sh 'sudo npm install'
+                sh 'npm start'
+            }
+        }
 
         stage('Install Dependencies') {
             steps {
